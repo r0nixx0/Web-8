@@ -1,1 +1,39 @@
+<h1 id="number">0</h1>
+<button id="btn4">Reset</button>
+<button id="plus">+</button>
+<button id="minus">-</button>
+<script>
+  let button4 = document.getElementById("btn4");
+  let plus = document.getElementById("plus");
+  let minus = document.getElementById("minus");
+  let number = document.getElementById("number");
+  let l = 0;
 
+  button4.addEventListener("click", () => {
+    l = 0;
+    number.textContent = l;
+    number.style.color = "black";
+  });
+
+  plus.addEventListener("click", () => {
+    l++;
+    number.textContent = l;
+
+    if (l < 0) {
+      number.style.color = "red";
+    } else {
+      number.style.color = "black";
+    }
+  });
+
+  minus.addEventListener("click", () => {
+    l--;
+    number.textContent = l;
+
+    if (l < 0) {
+      number.style.color = "red";
+    } else {
+      number.style.color = "black";
+    }
+  });
+</script>
