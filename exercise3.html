@@ -1,1 +1,16 @@
-   <!-- Write your code here -->
+<button id="btn3">Switch to dark</button>
+<script>
+  let button3 = document.getElementById("btn3");
+  let f = 0;
+  button3.addEventListener("click", () => {
+    if (f == 0) {
+      document.body.style.backgroundColor = "black";
+      button3.textContent = "Switch to light";
+      f = 1;
+    } else {
+      document.body.style.backgroundColor = "white";
+      button3.textContent = "Switch to dark";
+      f = 0;
+    }
+  });
+</script>
