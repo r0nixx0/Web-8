@@ -1,1 +1,24 @@
-   <!-- Write your code here -->
+<button
+  id="btn2"
+  style="
+    width: 260px;
+    height: 260px;
+    background-color: lightcoral;
+    border: none;
+    cursor: pointer;
+  "
+></button>
+<script>
+  let button2 = document.getElementById("btn2");
+  let size = 260;
+  button2.addEventListener("click", () => {
+    size += 20;
+    button2.style.width = size + "px";
+    button2.style.height = size + "px";
+  });
+  button2.addEventListener("dblclick", () => {
+    size = 260;
+    button2.style.width = size + "px";
+    button2.style.height = size + "px";
+  });
+</script>
